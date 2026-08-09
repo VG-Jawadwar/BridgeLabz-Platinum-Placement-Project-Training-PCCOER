@@ -1,0 +1,90 @@
+Day 2 (08-08-2026)
+
+java is not a pure object oriented programming language as it can have both primitive datatypes and classes and objects.
+// CodeChef : Compiler for Java programming
+throwable is the parent of each exception
+pascal case is used for class name always
+while addding 2 conditions in if statements or any other block always use the () in condition like (con1 && con2) etc. for correct evaluation
+we can write and define main method in abstract class becz we cant create the object of abstract class and when our program will load JVM will automatically call main method as its static and no need to create object and needs to explicitely call it
+when the scanner object is open and not closed after completion of program it will continue consuming resource and that condition is called as resource leak to avoid that always use the sc.close() at end of program
+Springboot and spring is most important techstack and most preferable than others
+previously MVC its only handeling the backend and frontend i.e when a request is sent to backend it will process that, generate the result and generate the ui , as backend only generating 
+
+in spring for building any project we have to manually configure to each and everyting i.e dependecies and all so to avoid that issue spring boot is used and its most used and demanded language
+spring boot provide the facility for deveoper to directly configure the project insted of manual way by using follwing options: 
+			ways used for creating springboot project:
+				cli
+				initializer 
+				sts 
+
+by allowing and providing facility of auto configuartion by directly importing/ adding components while initialization and generation
+JIT - just in time
+classloader - loads the main class for execution
+
+
+To convert a char to its ASCII value in Java, you can simply assign the character to an integer variable or explicitly typecast it to an int.Option 1: Implicit Typecasting (Recommended)Java automatically widens a 16-bit char into a 32-bit int, storing its corresponding numeric Unicode/ASCII code point.javachar character = 'A';
+int asciiValue = character; // Automatically converts to 65
+
+System.out.println("The ASCII value of " + character + " is: " + asciiValue);
+Use code with caution.Option 2: Explicit TypecastingIf you need to display or use the value immediately within an inline operation (like System.out.println), use explicit typecasting. This is also considered highly readable.javachar character = 'a';
+
+// Explicitly casting char to int returns 97
+System.out.println((int) character); 
+Use code with caution.Option 3: Extracting ASCII from a StringIf your character belongs to a String, extract it using the java.lang.String charAt() method before converting it to an integer:javaString text = "Java";
+int asciiValue = text.charAt(0); // Fetches 'J' and converts to 74
+
+System.out.println("ASCII value: " + asciiValue);
+Use code with caution.Option 4: Convert an Entire String to an ASCII Byte ArrayIf you need to process an entire string and extract the ASCII values of all characters at once, convert the text directly into a byte array via java.nio.charset.StandardCharsets:javaimport java.nio.charset.StandardCharsets;
+import java.util.Arrays;
+
+public class Main {
+    public static void main(String[] args) {
+        String word = "ABC";
+        byte[] asciiBytes = word.getBytes(StandardCharsets.US_ASCII);
+        
+        // Prints [65, 66, 67]
+        System.out.println(Arrays.toString(asciiBytes)); 
+    }
+}
+Use code with caution.Note: Standard ASCII ranges from 0 to 127. Because Java natively uses the Unicode character set (a backward-compatible superset of ASCII), any basic alphanumeric English character will perfectly match standard ASCII values.I'll tailor my next response. Just tell me:String or primitive char inputLooping or single character conversionTarget output data type neededJust reply with your answer or a new query to continue:
+
+
+***********javap -c classname : used for getting byte code of a compiled program in java in command line*********
+in byte code in front of each line a comment is added for 
+
+String[] args is given in main method as a "Array" becz when we give input in command line and needs to perfrom a perticuar code block in program based on command line input at that time args[] is used as array so that based on array values program code block will be executed.
+
+switch is faster than if, if else, if elseif ladder...... for execution
+ 
+Q. Why array index starts from 0???
+becz our system is allocating memory in 
+
+strict fp - is an non access modifier
+in java we only have access modifiers not specifiers.
+
+*******
+
+sealed classes in java: extension to inheritence (enhance inheritence), used when we want to permit/allow the perticular classes to extend a to another perticular class into itself in inheritence, used in enterprise level applications
+
+imp keywords used in sealed classes: 
+seed
+non seed
+final
+permit
+
+**********when we define 2 interface with 2 methods with same "name" at that time to call a method of perticular interface at that time we need to use super keyword to call a method for ex. A.super.print() i.e interaface_name.super.method() to call from main program. ************
+
+after java 8 java is called as operational and functional language.
+java 8 is most stable language
+
+before java 8 we only declare the method in interface
+after java 8 we can declare and define method in java interface
+
+******** @functional interface is an interface where it only have one abstract method ********
+
+*** SOLID Principal ****
+S - single responsibility (Class must perform a single operation at a program)
+O -  open and close principal (class must be open for extention but close for modification )
+L - Libserve (operations must be perforemed on child class) * Confirm once
+I - interface segregation (interface must perform a single operation at a program)
+D - Dependency in version principal
