@@ -110,7 +110,7 @@ public class StudentManagementSystem {
 
     public static void main(String[] args) {
 
-        String name1 = "Alice";
+        String name1 = "Vaibhav";
         String course1 = "Java";
 
         enrollStudent(name1, course1);
@@ -126,7 +126,7 @@ public class StudentManagementSystem {
 
         printReport(name1, course1, fee1, average1, grade1, marks1);
         
-        String name2 = "Bob";
+        String name2 = "Harsh";
         String course2 = "Python";
 
         enrollStudent(name2, course2);
@@ -142,7 +142,7 @@ public class StudentManagementSystem {
 
         printReport(name2, course2, fee2, average2, grade2, marks2);
 
-        String name3 = "Charlie";
+        String name3 = "Krushna";
         String course3 = "DataScience";
 
         enrollStudent(name3, course3);
