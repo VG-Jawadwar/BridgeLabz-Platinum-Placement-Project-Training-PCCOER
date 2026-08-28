@@ -1,0 +1,72 @@
+instance variables and objects are same as objects are also the instance of that class
+spring boot provides the facility for deveoper for execute the progran untill the condition is true i.e perform continuous execution without looping as it provides the facility for that
+
+types of constructor:
+	public
+	private
+	default
+	parameterised
+	.....
+its needed to make the entry point / starting point for program i.e it make the program identify from where to start the program execution
+
+Arrays are in the form of: [row] [column]......
+continue, break and all other statements are used for segmenting code blocks for perticular users
+
+*****IMP: 
+for(;;) : represent that loop will continue their execution infinitely and acts like a while loop , here ;; representing the no initialization, condition and inc/dec amd leads to infinite execution
+semicolons are mandatory in for loop
+
+System.exit(0) : used to exit from the program, works with system which is internal lib and used for ending program
+
+final: its used for allocating restriction, for ex if a class is final then it cant be inherited by others i.e restricted 
+finally: used with try catch,  finally block is prresent here
+finalized: method invoked by garbage collector when work of object is completed
+
+****** Constructor is NOT FINAL Always becz its not inherited and belongs to class only
+
+************constructor chaining: 
+
+class A { A() {print a} }
+class B extends A { B() {print b} }
+class C { C c = new C(); }
+
+its called as constructor chaining as multiple classes are connected with each othe using extends and create the chain
+here on c's object creation all constructors are executed in top to bottom nature i,e first A then B then C 
+
+interface doesnt have constructor 
+
+why connecting the two interface uses extends keyword? - search on google
+
+object creation of interface we cant do that becz it doesnt have a constructor so compiler will not know where to start we can create the reference of interface
+
+interface works as rule book for our program and hence its needed in java to set the rules and restrictions
+
+******** IMP *******
+static block executes before constructor and used when we require the specialized block for different activities like initialization of static variables 
+it only used with static attributes, functions and all
+********************
+
+*****in java OOP basically focus on data and becauze of that its uses pass by value rather than pass by reference to maintain the consistency
+
+
+types of object creation: 
+
+shallow copy : copies each values of one object to other object as a reference so that any change made by the one object 2 is made to object 1 as well
+Stud a = new Stud();
+stud b = a
+
+deep copy: copies each values of one object to other object so that any change made by the one object 2 is not made to object 1 to maintain the consistancy 
+Stud a = new Stud();
+stud b.set(a.get)
+
+**************************
+string constatnt pool or why string is immutable - when object of string is created then its stored in string constatnt pool and all strings are belongs to a string constant pool and it does not allow the creation of duplicate string and hence its immutable to avoid repeatation
+String s = "ss"
+String a = "ss"
+here both string have same value so in string constatnt pool it refers to single location in string constatnt pool area so avoid extra memory utilization
+
+String str1 = new String("bbah") - creates the 2 objects , one is in heap memory and 1 is in string constatnt pool
+
+******** we can overload the main method with differnt parameters
+
+while returning a value if its primitive datatype it will return only 1 at a time but for multiple return we can use array or objects
