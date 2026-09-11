@@ -6,30 +6,24 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-
        
         System.out.print("Enter number of employees: ");
         int n = sc.nextInt();
-
        
         double[] salaries = new double[n];
-
     
         for (int i = 0; i < n; i++) {
             System.out.print("Enter salary of Employee " + (i + 1) + ": ");
             salaries[i] = sc.nextDouble();
         }
-
      
         double total = 0;
 
         for (int i = 0; i < n; i++) {
             total = total + salaries[i];
         }
-
        
         double average = total / n;
-
      
         double highest = salaries[0];
         double lowest = salaries[0];
@@ -49,7 +43,6 @@ public class Main {
                 lowestEmployee = i + 1;
             }
         }
-
        
         int aboveAverage = 0;
 
@@ -58,7 +51,6 @@ public class Main {
                 aboveAverage++;
             }
         }
-
       
         int within5000 = 0;
 
