@@ -1,0 +1,30 @@
+"Time Complexity"
+
+bubble sort: O(n)
+Merge Sort: O(n log n)
+Quick Sort
+Heap Sort
+
+*********Space Complexity for Array is O(n) - number of elements in array is n so complexity is also n
+
+Arrays.sort(): directly sorts the array , uses the quick sort in backend
+
+initially A Boolean Variable have False Value
+n+3/2+1 : formula for ArrayList
+
+****************ArrayList**********
+its a dynamic array in java
+initially ArrayList size is 10
+
+how it works in backend is as its dynamic in size i.e if new element is added and array size is full even then the new element is added into arraylist and its size is increaed so in backend a new arraylist is creaed and old arraylist elemenst are copied to new arraylist and old arraylist is deleted and new arraylist is used for all oerations
+
+Array is prefeerd if no of elements are fixed and arraylist is prefeered if its dynamic
+arraylist is easy for insertion and deletion
+
+Arrays.copyOf(source, source.length);  OR // Syntax: arraycopy(Object src, int srcPos, Object dest, int destPos, int length) 
+System.arraycopy(source, 1, destination, 0, 3);   - 2 methods used for copying elements of array into other array
+
+2D Array:
+
+ structure:
+		arr[row][column]
